@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tandartspraktijk Kieskeurig</title>
+    </head>
+
+    <body>
+        <h1><strong>Tandarts afspraak</strong></h1>
+
+        <hr>
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> 
+            Integer non arcu eleifend, condimentum lectus nec, semper lacus.<br>
+            Fusce eget eros tempor dolor mattis consectetur.<br> 
+            Sed luctus a nibh sit amet rutrum.<br> 
+            Nunc blandit eros eget ultricies molestie.<br> 
+            Donec porta tellus quis aliquet venenatis.<br> 
+            Maecenas rhoncus ullamcorper bibendum.<br>
+            <br> 
+            Nunc lacus ipsum, congue a purus ut, elementum maximus tortor.<br> 
+            Integer purus tellus, blandit a ipsum eget, euismod tristique arcu.<br> 
+            Morbi pretium tincidunt mi, sed varius velit commodo ac.<br> 
+            Sed ac iaculis purus, id consequat turpis.<br> 
+            Integer vestibulum et nisi ut volutpat.<br> 
+            Nullam lacinia blandit mollis.<br> 
+            Suspendisse varius ex eget vulputate aliquam.<br> 
+            Nulla.
+        </p>
+
+        <hr>
+
+        <img src="afbeeldingen/Heemskerk-tandartsen.jpg" width="300" alt="Perfect gebit">
+        <img src="afbeeldingen/ons_team.jpg" width="300" alt="Tandartsen en assistenten">
+        <img src="afbeeldingen/tandatrs.jpeg" width="300" alt="Tandarts praktijk">
+
+        <hr>
+
+        <!--https://formspree.io/f/xayzqdyo is de koppeling van de mailscript aan het formulier via formspree.io-->\
+        <!--Om files te kunnen uploaden heb je een betaald account nodig. 
+            In de form zou dan dit attribuut toegevoegd moeten worden: enctype="multipart/form-data"-->
+        <form id="Afspraak formulier" action="https://formspree.io/f/xayzqdyo" method="post">
+            <fieldset>
+                <legend><b>Afspraak formulier</b></legend>
+                <fieldset>
+                    <legend>Persoonlijke gegevens</legend>
+                    <table width="350">
+                        <tr>
+                            <td><label for="Voornaam">Voornaam :</label></td>
+                            <td><input id="Vooraam" type="text" name="Voornaam"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="Achternaam">Achternaam :</label></td>
+                            <td><input id="Achternaam" type="text" name="Achternaamaam"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="Straatnaam">Straatnaam :</label></td>
+                            <td><input id="Straatnaam" type="text" name="Straatnaam"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="Huisnummer">Huisnummer :</label></td>
+                            <td><input id="Huisnummer" type="text" name="Huisnummer"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="Postcode">Postcode :</label></td>
+                            <td><input id="Postcode" type="text" name="Postcode"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="Woonplaats">Woonplaats :</label></td>
+                            <td><input id="Woonplaats" type="text" name="Woonplaats"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="Land">Land :</label></td>
+                            <td><select id="Land" name="Land">
+                                    <option value="NL" selected>Nederland</option>
+                                    <option value="BE">België</option>
+                                    <option value="DE">Duitsland</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="Email">Email :</label></td>
+                            <td><input id="Email" type="email" name="Email"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="Telefoon">Telefoon :</label></td>
+                            <td><select id="Telefoon" name="Landnummer">
+                                <option value="+31" selected>+31</option>
+                                <option value="+32">+32</option>
+                                <option value="+49">+49</option>
+                            </select><br>
+                                <input id="Telefoon" type="tel" name="Telefoon"></td>
+                        </tr>
+                    </table>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Beschrijving van klachten</legend>
+                    <table width="350">
+                        <tr>
+                            <td colspan="2">
+                                <label for="Pijn">Pijn :</label>
+                                <input id="Pijn" type="checkbox" name="Klachten" value="Pijn">
+                                <label for="Kleur">Kleur :</label>
+                                <input id="Kleur" type="checkbox" name="Klachten" value="Kleur">
+                                <label for="Uitval">Uitval :</label>
+                                <input id="Uitval" type="checkbox" name="Klachten" value="uitval">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="Foto">Foto :</label></td>
+                            <td><input id="Foto" type="file" name="Foto" accept="jpeg" multiple ></td>
+                        </tr>
+                    </table>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Toelichting van klachten</legend>
+                    <table width="350">
+                        <tr>
+                            <td><label for="Toelichting">Toelichting :</label></td>
+                            <td><textarea id="Toelichting" name="Toelichting" placeholder="Toelichting van klachten" maxlength="1500"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td><label for="Datum">Datum :</label></td>
+                            <td><input id="Datum" type="date" name="Datum" min="2023-02-01"></td>
+                        </tr>
+                    </table>
+                </fieldset>
+                <br>
+                <input type="submit" name="Persoonsgegevens" value="Verzenden">
+            </fieldset>
+        </form>
+        
+    </body>
+</html>
